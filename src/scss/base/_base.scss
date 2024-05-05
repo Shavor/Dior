@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display:ital@0;1&display=swap');
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	text-wrap: balance;
+	font-size: 14px;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 32px;
+}

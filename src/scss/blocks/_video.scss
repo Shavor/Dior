@@ -1,0 +1,20 @@
+.video {
+	&__inner {}
+
+	&__box {
+		background-image: url(../../img/video-bg.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 600px;
+		max-width: 997px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin-left: auto;
+	}
+
+	&__btnn {}
+}

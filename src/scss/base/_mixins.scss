@@ -1,0 +1,43 @@
+@mixin mediaBg() {
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin tablet () {
+	@media (max-width: 1220px) {
+		@content;
+	}
+}
+
+@mixin tablet-768 () {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin tablet-667 () {
+	@media (max-width: 667px) {
+		@content;
+	}
+}
+
+@mixin tablet-568 () {
+	@media (max-width: 568px) {
+		@content;
+	}
+}
+
+@mixin tablet-414 () {
+	@media (max-width: 415px) {
+		@content;
+	}
+}
+
+@mixin mobile () {
+	@media (max-width: 320px) {
+		@content;
+	}
+}

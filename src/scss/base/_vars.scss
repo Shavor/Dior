@@ -1,0 +1,24 @@
+:root {
+	--container-width: 1220px;
+	--container-padding: 10px;
+
+	--font-main: 'Inter', sans-serif;
+	--font-accent: 'Playfair Display';
+	--font-titles: var(--font-accent);
+
+	--page-bg: #fff;
+	--text-color: #1B1B1B;
+	--accent: #7449BB;
+	--link-color: #2578c8;
+	--active-color: #7449BB;
+
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

@@ -1,0 +1,82 @@
+.header {
+	margin: 30px 0 100px 0;
+	max-height: 115px;
+
+	@include mobile {
+		margin-bottom: 53px;
+	}
+
+	&__inner {
+		display: grid;
+		align-self: flex-start;
+	}
+
+	&__title {
+		font-family: var(--font-accent);
+		font-size: 14px;
+		grid-column: 5/3 span;
+
+		@include tablet-667 {
+			display: none;
+		}
+	}
+
+	&__nav {
+		grid-column: 9/2 span;
+
+		@include tablet-414 {
+			display: none;
+		}
+	}
+}
+
+.logo {
+	grid-column: 2 span;
+}
+
+.nav {
+
+	&__item {
+		padding-bottom: 10px;
+	}
+
+
+	&__link {
+		font-size: 12px;
+		color: var(--text-color);
+		transition: color 0.3s ease-in-out;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			color: var(--accent);
+		}
+
+		&:active {
+			color: var(--active-color)
+		}
+	}
+}
+
+.nav__link:focus-visible {
+	outline: 1px solid var(--active-color);
+}
+
+.active {}
+
+.user {
+
+
+	&__nav {
+		grid-column: 12/1 span;
+		gap: 21px;
+		justify-content: flex-end;
+	}
+
+	&__nav-item {}
+
+
+	&__nav-link {}
+}

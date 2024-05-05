@@ -1,0 +1,60 @@
+.grisdior {
+	overflow: hidden;
+
+	&__title {
+		max-width: 185px;
+		font-size: 32px;
+		line-height: 1.3437;
+		font-family: var(--font-accent);
+		color: #1B1B1B;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__inner {
+		align-items: end;
+		font-size: 14px;
+		line-height: 1.2142;
+		color: #1B1B1B;
+		font-family: var(--font-main);
+	}
+
+	&__content {
+		margin-bottom: 150px;
+	}
+
+	&__right {
+		grid-column: 9/4 span;
+	}
+
+
+	&__right-text {
+		font-weight: bold;
+		padding-bottom: 24px;
+	}
+
+
+	&__left {
+		grid-column: 3/4 span;
+	}
+
+	&__left-text {
+		font-weight: 400;
+		padding-bottom: 24px;
+	}
+}
+
+.last {
+	padding-bottom: 0px;
+}
+
+.grid {
+	align-items: end;
+}
+
+.mySwiper-btn {
+	min-height: 0px;
+	display: block;
+	margin-top: 20px;
+	margin-left: 200px;
+}

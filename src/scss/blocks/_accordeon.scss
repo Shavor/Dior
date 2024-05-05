@@ -1,0 +1,77 @@
+.accordeon {
+	margin-bottom: 223px;
+
+	&__inner {
+		padding-left: 200px;
+	}
+
+	&__item {
+		border-bottom: 1px solid black;
+		padding: 50px 101px 0px 0px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 51px;
+			background-image: url('../../img/arrow-down.svg');
+			z-index: 10;
+			right: 85px;
+			top: 50px;
+		}
+
+		&:last-child::after {
+			content: '';
+			position: absolute;
+			width: 68px;
+			height: 120px;
+			background-image: url('../../img/accordeon-img.jpg');
+			z-index: 10;
+			left: 268px;
+			top: 73px;
+		}
+
+	}
+
+	&__triger {
+		display: flex;
+		align-items: center;
+		gap: 180px;
+		cursor: pointer;
+	}
+
+	&__triger-title {
+		font-size: 24px;
+		line-height: 1.2083;
+		font-family: var(--font-main);
+		min-width: 233px;
+		text-transform: uppercase;
+		padding-bottom: 42px;
+	}
+
+	&__triger-text {
+		font-size: 14px;
+		line-height: 1.2242;
+		font-family: var(--font-main);
+		flex-basis: 387px;
+		margin-right: 104px;
+		padding-bottom: 20px;
+	}
+
+	&__content {
+		display: none;
+
+		p {
+			padding-bottom: 20px;
+		}
+	}
+}
+
+.accordeon__item--active .accordeon__content {
+	display: block;
+}
+
+.accordeon__item--remove.accordeon__item::before {
+	content: none;
+}
